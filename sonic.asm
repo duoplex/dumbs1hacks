@@ -16,7 +16,7 @@ AddressSRAM	  = 3	; 0 = odd+even; 2 = even only; 3 = odd only
 ; Change to 0 to build the original version of the game, dubbed REV00
 ; Change to 1 to build the later vesion, dubbed REV01, which includes various bugfixes and enhancements
 ; Change to 2 to build the version from Sonic Mega Collection, dubbed REVXB, which fixes the infamous "spike bug"
-Revision	  = 1
+Revision	  = 0
 
 ZoneCount	  = 6	; discrete zones are: GHZ, MZ, SYZ, LZ, SLZ, and SBZ
 
@@ -2435,18 +2435,18 @@ LevSel_Ptrs:	if Revision=0
 		dc.b id_GHZ, 0
 		dc.b id_GHZ, 1
 		dc.b id_GHZ, 2
-		dc.b id_LZ, 0
-		dc.b id_LZ, 1
-		dc.b id_LZ, 2
 		dc.b id_MZ, 0
 		dc.b id_MZ, 1
 		dc.b id_MZ, 2
-		dc.b id_SLZ, 0
-		dc.b id_SLZ, 1
-		dc.b id_SLZ, 2
 		dc.b id_SYZ, 0
 		dc.b id_SYZ, 1
 		dc.b id_SYZ, 2
+		dc.b id_LZ, 0
+		dc.b id_LZ, 1
+		dc.b id_LZ, 2
+		dc.b id_SLZ, 0
+		dc.b id_SLZ, 1
+		dc.b id_SLZ, 2
 		dc.b id_SBZ, 0
 		dc.b id_SBZ, 1
 		dc.b id_LZ, 3		; Scrap Brain Zone 3
@@ -2724,11 +2724,8 @@ LevSel_CharOk:
 ; ---------------------------------------------------------------------------
 ; Level	select menu text
 ; ---------------------------------------------------------------------------
-LevelMenuText:	if Revision=0
-		binclude	"misc/Level Select Text.bin"
-		else
+LevelMenuText:	
 		binclude	"misc/Level Select Text (JP1).bin"
-		endif
 		even
 ; ---------------------------------------------------------------------------
 ; Music	playlist
