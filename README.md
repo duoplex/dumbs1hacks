@@ -1,6 +1,6 @@
-Dumb Sonic 1 Hacks
+Sonic the Hedgehog
 ============
-A bunch of Sonic the Hedgehog (1991) Hacks. This branch contains... Sonic 1.
+This is just SOnic the Hedgehog.
 
 
 s1disasm_git
