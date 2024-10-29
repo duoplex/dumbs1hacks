@@ -1,6 +1,6 @@
 Fixed REV00 Level Select
 ============
-Pretty self-explanitory
+Pretty self-explanitory.
 
 Additions:
 - Nothing
