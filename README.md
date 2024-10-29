@@ -1,6 +1,12 @@
 Sonic the Hedgehog
 ============
-This is just Sonic the Hedgehog.
+This is just Sonic the Hedgehog. It contains the code for both REV00 and REV01. If you aren't looking for that, go to the other branches, as that's where the hacks are. If you are looking for that, you're in the wrong repository, you're looking for https://github.com/sonicretro/s1disasm.
+
+Additions:
+- Nothing
+
+Changes:
+- Nothing
 
 
 s1disasm_git
