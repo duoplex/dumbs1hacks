@@ -1,6 +1,6 @@
 Sonic the Hedgehog
 ============
-This is just SOnic the Hedgehog.
+This is just Sonic the Hedgehog.
 
 
 s1disasm_git
